@@ -1,5 +1,5 @@
 body {
-    background: url("../resources/background.png");
+    background: url("../resources/fancy-pants.jpg");
     background-attachment: fixed;
 }
 
@@ -8,5 +8,9 @@ form {
 }
 
 .btn-position {
+    text-align: center;
+}
+
+#carouselExampleControls {
     text-align: center;
 }
