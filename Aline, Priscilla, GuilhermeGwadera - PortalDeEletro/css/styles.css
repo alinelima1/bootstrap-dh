@@ -1,7 +1,12 @@
 body {
-    background: url("../resources/background.png")
+    background: url("../resources/background.png");
+    background-attachment: fixed;
 }
 
-h1 {
-    color: wheat;
+form {
+    border-radius: 8px;
+}
+
+.btn-position {
+    text-align: center;
 }

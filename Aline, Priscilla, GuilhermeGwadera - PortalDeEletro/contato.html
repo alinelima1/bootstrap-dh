@@ -9,9 +9,57 @@
     <title>Document</title>
 </head>
 
-<body>
-    <header></header>
-    <section></section>
+<body class="container">
+    <header class="p-3 my-3 bg-dark text-white">
+        <h1>Incluir header</h1>
+    </header>
+    <section>
+        <div class="row">
+            <div class="col-8 p-3 my-3 bg-dark text-white">
+                <p>
+                    Nossa página foi criada com o intuito de oferecer produtos de ****, com qualidade e preço
+                    justo.<br><br>
+                    Temos um time pronto e disposto à te atender com carinho e agilidade:
+                </p>
+                <ul>
+                    <li>Aline Abreu</li>
+                    <li>Gustavo Gwadera</li>
+                    <li>Priscilla Tieme</li>
+                </ul>
+                <p><b>Preencha o formulário ao lado e receba nossas novidades!</b></p>
+            </div>
+            <div class="col-4">
+                <form class="p-3 my-3 bg-white">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" placeholder="Name completo" required><br><br>
+                    <label for="email">E-mail:</label>
+                    <input type="text" id="email" name="email" value="" required><br><br>
+                    <label for="phone">Telefone:</label>
+                    <input type="text" list="phone" name="phone" placeholder="(11) 99999-1234" value=""><br><br>
+                    <label for="gender">Gênero:</label> <br>
+                    <input type="radio" id="female" name="gender" value="Feminino">
+                    <label for="gender">Feminino</label> <br>
+                    <input type="radio" id="male" name="gender" value="Masculino">
+                    <label for="gender">Masculino</label><br><br>
+                    <label for="interests">Interesses:</label><br>
+                    <input type="checkbox" id="option1" name="option1" value="Item1">
+                    <label for="option1">Item1</label><br>
+                    <input type="checkbox" id="option2" name="option2" value="Item2">
+                    <label for="option2">Item2</label><br>
+                    <input type="checkbox" id="option3" name="option3" value="Item3">
+                    <label for="option3">Item3</label><br>
+                    <input type="checkbox" id="option4" name="option4" value="Item4">
+                    <label for="option4">Item4</label><br>
+                    <input type="checkbox" id="option5" name="option5" value="Item5">
+                    <label for="option5">Item5</label><br><br>
+                    <div class="btn-position">
+                        <input class="btn btn-success" type="submit" value="Submit" />
+                        <input class="btn btn-danger" type="reset" value="Excluir" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
     <footer></footer>
 </body>
 
