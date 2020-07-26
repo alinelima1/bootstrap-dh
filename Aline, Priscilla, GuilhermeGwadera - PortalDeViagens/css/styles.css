@@ -47,3 +47,26 @@ input[type=number]{
     padding: 3%;
     text-align: center;
 }
+
+.footer-title {
+    margin-left: 40%;
+    padding-bottom: 2%;
+}
+
+.page-footer {
+    color: white;
+}
+
+.logos-align {
+    margin-right: 2vw;
+    float: left;
+}
+
+.logos {
+    width: 30px;
+    height: 30px;
+}
+
+.link-style {
+    color: white;
+}

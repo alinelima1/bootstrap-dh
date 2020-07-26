@@ -48,84 +48,237 @@
     </header>
 
     <main>
-        <div class="row">
-            <section class="col-lg-8">
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100" src="./resources/dubai_capa.jpg" alt="First slide" />
-                            <div class="promotion">
-                                <div class="promotion-card">
-                                    <img src="https://img.icons8.com/color/48/000000/card-in-use.png" />
-                                    12x no cartão
+        <section class="container-fluid rounded mb-4">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="./resources/dubai_capa.jpg" alt="First slide" />
+                                <div class="promotion">
+                                    <div class="promotion-card">
+                                        <img src="https://img.icons8.com/color/48/000000/card-in-use.png" />
+                                        12x no cartão
+                                    </div>
+                                    <p class="promotion-percent">Dubai
+                                        -40%
+                                    </p>
                                 </div>
-                                <p class="promotion-percent">Dubai
-                                    -40%
-                                </p>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="./resources/nova_iorque_capa.jpg" alt="Second slide" />
+                                <div class="promotion">
+                                    <div class="promotion-card">
+                                        <img src="https://img.icons8.com/color/48/000000/card-in-use.png" />
+                                        12x no cartão
+                                    </div>
+                                    <p class="promotion-percent">Nova York
+                                        -65%
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="./resources/parque_mundo_do_chocolate_gramado_capa.jpg"
+                                    alt="Third slide" />
+                                <div class="promotion">
+                                    <div class="promotion-card">
+                                        <img src="https://img.icons8.com/color/48/000000/card-in-use.png" />
+                                        12x no cartão
+                                    </div>
+                                    <p class="promotion-percent">Gramado
+                                        -55%
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="./resources/nova_iorque_capa.jpg" alt="Second slide" />
-                            <div class="promotion">
-                                <div class="promotion-card">
-                                    <img src="https://img.icons8.com/color/48/000000/card-in-use.png" />
-                                    12x no cartão
-                                </div>
-                                <p class="promotion-percent">Nova York
-                                    -65%
-                                </p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="./resources/parque_mundo_do_chocolate_gramado_capa.jpg"
-                                alt="Third slide" />
-                            <div class="promotion">
-                                <div class="promotion-card">
-                                    <img src="https://img.icons8.com/color/48/000000/card-in-use.png" />
-                                    12x no cartão
-                                </div>
-                                <p class="promotion-percent">Gramado
-                                    -55%
-                                </p>
-                            </div>
-                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
                 </div>
-            </section>
-            <section class="col-lg-4">
-                <form class="bg-light form-packages">
-                    <h5 class="packages">Busca por pacotes:</h5>
-                    <label for="departureCity">Saio de:</label>
-                    <input type="text" id="departureCity" name="departureCity" placeholder="Digite a cidade"
-                        required /><br /><br />
-                    <label for="arrivalCity">Chego em:</label>
-                    <input type="text" id="arrivalCity" name="arrivalCity" placeholder="Digite a cidade"
-                        required /><br /><br />
-                    <label for="departureDate">Saída:</label>
-                    <input type="date" id="departureDate" name="departureDate" required /><br /><br />
-                    <label for="arrivalDate">Chegada:</label>
-                    <input type="date" id="arrivalDate" name="arrivalDate" required /><br /><br />
-                    <label for="quantity">Quantidade de pessoas:</label>
-                    <input type="number" id="quantity" name="quantity" placeholder="0" required /><br /><br />
-                    <div class="btn-position">
-                        <input class="btn btn-success" type="submit" value="Buscar" />
-                        <input class="btn btn-danger" type="reset" value="Limpar" />
+                <div class="col-lg-4">
+                    <form class="bg-light form-packages">
+                        <h5 class="packages">Busca por pacotes:</h5>
+                        <label for="departureCity">Saio de:</label>
+                        <input type="text" id="departureCity" name="departureCity" placeholder="Digite a cidade"
+                            required /><br /><br />
+                        <label for="arrivalCity">Chego em:</label>
+                        <input type="text" id="arrivalCity" name="arrivalCity" placeholder="Digite a cidade"
+                            required /><br /><br />
+                        <label for="departureDate">Saída:</label>
+                        <input type="date" id="departureDate" name="departureDate" required /><br /><br />
+                        <label for="arrivalDate">Chegada:</label>
+                        <input type="date" id="arrivalDate" name="arrivalDate" required /><br /><br />
+                        <label for="quantity">Quantidade de pessoas:</label>
+                        <input type="number" id="quantity" name="quantity" placeholder="0" required /><br /><br />
+                        <div class="btn-position">
+                            <input class="btn btn-success" type="submit" value="Buscar" />
+                            <input class="btn btn-danger" type="reset" value="Limpar" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="container-fluid bg-light rounded mb-4">
+            <h2 class="p-2 text-center">Confira nossos pacotes</h2>
+            <div class="row">
+                <div class="col-lg-3 mb-3">
+                    <div class="card h-100">
+                        <img src="./resources/card-buenosAires.jpg" alt="" class="card-img-top" />
+                        <div class="card-body">
+                            <h5 class="card-title">Buenos Aires</h5>
+                            <p class="card-text">Aéreo + Hospedagem <br />R$1.500,00</p>
+                            <p class="card-text"><small class="text-muted">Preço por pessoa, saindo de São
+                                    Paulo.</small></p>
+                            <a href="#" data-toggle="modal" data-target="#modalBuenosAires"
+                                class="card-link">Detalhes</a>
+                        </div>
                     </div>
-                </form>
-            </section>
-        </div>
+                </div>
+                <div class="col-lg-3 mb-3">
+                    <div class="card h-100">
+                        <img src="./resources/card-cancun.jpg" alt="" class="card-img-top" />
+                        <div class="card-body">
+                            <h5 class="card-title">Cancun</h5>
+                            <p class="card-text">Aéreo + Hospedagem <br />R$2.300,00</p>
+                            <p class="card-text"><small class="text-muted">Preço por pessoa, saindo de São
+                                    Paulo.</small></p>
+                            <a href="#" data-toggle="modal" data-target="#modalCancun" class="card-link">Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-3">
+                    <div class="card h-100">
+                        <img src="./resources/card-gramado.jpg" alt="" class="card-img-top" />
+                        <div class="card-body">
+                            <h5 class="card-title">Gramado</h5>
+                            <p class="card-text">Aéreo + Hospedagem <br />R$500,00</p>
+                            <p class="card-text"><small class="text-muted">Preço por pessoa, saindo de São
+                                    Paulo.</small></p>
+                            <a href="#" data-toggle="modal" data-target="#modalGramado" class="card-link">Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-3">
+                    <div class="card h-100">
+                        <img src="./resources/card-jericoacoara.jpg" alt="" class="card-img-top" />
+                        <div class="card-body">
+                            <h5 class="card-title">Jericoacoara</h5>
+                            <p class="card-text">Aéreo + Hospedagem <br />R$1.000,00</p>
+                            <p class="card-text"><small class="text-muted">Preço por pessoa, saindo de São
+                                    Paulo.</small></p>
+                            <a href="#" data-toggle="modal" data-target="#modalJericoacoara"
+                                class="card-link">Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-3">
+                    <div class="card h-100">
+                        <img src="./resources/card-orlando.jpg" alt="" class="card-img-top" />
+                        <div class="card-body">
+                            <h5 class="card-title">Orlando</h5>
+                            <p class="card-text">Aéreo + Hospedagem <br />R$2.800,00</p>
+                            <p class="card-text"><small class="text-muted">Preço por pessoa, saindo de São
+                                    Paulo.</small></p>
+                            <a href="#" data-toggle="modal" data-target="#modalOrlando" class="card-link">Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-3">
+                    <div class="card h-100">
+                        <img src="./resources/card-portoGalinhas.jpg" alt="" class="card-img-top" />
+                        <div class="card-body">
+                            <h5 class="card-title">Porto de Galinhas</h5>
+                            <p class="card-text">Aéreo + Hospedagem <br />R$600,00</p>
+                            <p class="card-text"><small class="text-muted">Preço por pessoa, saindo de São
+                                    Paulo.</small></p>
+                            <a href="#" data-toggle="modal" data-target="#modalPortoDeGalinhas"
+                                class="card-link">Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-3">
+                    <div class="card h-100">
+                        <img src="./resources/card-portoSeguro.jpg" alt="" class="card-img-top" />
+                        <div class="card-body">
+                            <h5 class="card-title">Porto Seguro</h5>
+                            <p class="card-text">Aéreo + Hospedagem <br />R$450,00</p>
+                            <p class="card-text"><small class="text-muted">Preço por pessoa, saindo de São
+                                    Paulo.</small></p>
+                            <a href="#" data-toggle="modal" data-target="#modalPortoSeguro"
+                                class="card-link">Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-3">
+                    <div class="card h-100">
+                        <img src="./resources/card-Santiago.jpg" alt="" class="card-img-top" />
+                        <div class="card-body">
+                            <h5 class="card-title">Santiago</h5>
+                            <p class="card-text">Aéreo + Hospedagem <br />R$2.100,00</p>
+                            <p class="card-text"><small class="text-muted">Preço por pessoa, saindo de São
+                                    Paulo.</small></p>
+                            <a href="#" data-toggle="modal" data-target="#modalSantiago" class="card-link">Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 
-    <footer></footer>
+    <footer class="page-footer font-small pt-4">
+        <div class="container-fluid text-center text-md-left">
+            <div class="footer-title">
+                <img src="https://img.icons8.com/color/48/000000/around-the-globe.png" width="48" height="48" />
+                GAP Viagens
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 mt-md-0 mt-3">
+                    <h5>Entre em contato conosco:</h5>
+                    <div class="logos-align">
+                        <a href="https://facebook.com" target="_blank"><img class="logos" src="./resources/facebook.png"
+                                title="Facebook"></a>
+                        <a href="https://instagram.com" target="_blank"><img class="logos"
+                                src="./resources/instagram.png" title="Instagram"></a>
+                        <a href="https://twitter.com" target="_blank"><img class="logos" src="./resources/twitter.png"
+                                title="Twitter"></a>
+                        <a href="mailto:contato@gapturismo.com?subject=Contato"><img class="logos"
+                                src="./resources/email.png" title="E-mail"></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Overview:</h5>
+                    <ul class="list-unstyled">
+                        <li><a class="link-style" href="#">Sobre nós</a></li>
+                        <li><a class="link-style" href="#">Trabalhe conosco</a></li>
+                        <li><a class="link-style" href="#">Termos de uso</a></li>
+                        <li><a class="link-style" href="#">Política de privacidade</a></li>
+                        <li><a class="link-style" href="#">Central de ajuda</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Endereço:</h5>
+                    <p>Rua das Viagens, nro 123
+                        <br />Bairro: Centro
+                        <br />São Paulo - SP
+                        <br />CEP:10.000-000
+                        <br />Tefone:(11)3333-1234
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -133,5 +286,227 @@
 
 </html>
 
-<!-- #bdbdbd
-#e0e0e0 -->
+<!-- Modal Buenos Aires-->
+<div class="modal fade" id="modalBuenosAires" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Buenos Aires</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Viaje com toda sua família para Buenos Aires, a hospedagem consiste de:</p>
+                <ul>
+                    <li>Ar condicionado</li>
+                    <li>Wi-Fi grátis</li>
+                    <li>Academia</li>
+                </ul>
+                <p>Valor 1.500,00 por pessoa, saindo de São Paulo.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Cancun-->
+<div class="modal fade" id="modalCancun" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Cancun</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Viaje com toda sua família para Cancun, a hospedagem consiste de:</p>
+                <ul>
+                    <li>Estacionamento grátis</li>
+                    <li>Ar condicionado</li>
+                    <li>Piscina</li>
+                    <li>Wi-Fi grátis</li>
+                </ul>
+                <p>Valor 2.300,00 por pessoa, saindo de São Paulo.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Gramado-->
+<div class="modal fade" id="modalGramado" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Gramado</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Viaje com toda sua família para Gramado, a hospedagem consiste de:</p>
+                <ul>
+                    <li>Estacionamento grátis</li>
+                    <li>Ar condicionado</li>
+                    <li>Wi-Fi grátis</li>
+                </ul>
+                <p>Valor 500,00 por pessoa, saindo de São Paulo.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Jericoacoara-->
+<div class="modal fade" id="modalJericoacoara" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Jericoacoara</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Viaje com toda sua família para Jericoacoara, a hospedagem consiste de:</p>
+                <ul>
+                    <li>Estacionamento grátis</li>
+                    <li>Ar condicionado</li>
+                    <li>Piscina</li>
+                    <li>Wi-Fi grátis</li>
+                    <li>Academia</li>
+                </ul>
+                <p>Valor 450,00 por pessoa, saindo de São Paulo.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Orlando-->
+<div class="modal fade" id="modalOrlando" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Orlando</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Viaje com toda sua família para Orlando, a hospedagem consiste de:</p>
+                <ul>
+                    <li>Estacionamento grátis</li>
+                    <li>Ar condicionado</li>
+                    <li>Piscina</li>
+                    <li>Wi-Fi grátis</li>
+                    <li>Academia</li>
+                </ul>
+                <p>Valor 2.800,00 por pessoa, saindo de São Paulo.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Porto de Galinhas-->
+<div class="modal fade" id="modalPortoDeGalinhas" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Porto de Galinhas</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Viaje com toda sua família para Porto de Galinhas, a hospedagem consiste de:</p>
+                <ul>
+                    <li>Estacionamento grátis</li>
+                    <li>Ar condicionado</li>
+                    <li>Piscina</li>
+                    <li>Wi-Fi grátis</li>
+                </ul>
+                <p>Valor 600,00 por pessoa, saindo de São Paulo.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Porto Seguro-->
+<div class="modal fade" id="modalPortoSeguro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Porto Seguro</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Viaje com toda sua família para Porto Seguro, a hospedagem consiste de:</p>
+                <ul>
+                    <li>Estacionamento grátis</li>
+                    <li>Ar condicionado</li>
+                    <li>Piscina</li>
+                    <li>Wi-Fi grátis</li>
+                    <li>Academia</li>
+                </ul>
+                <p>Valor 450,00 por pessoa, saindo de São Paulo.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Santiago-->
+<div class="modal fade" id="modalSantiago" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Santiago</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Viaje com toda sua família para Santiago, a hospedagem consiste de:</p>
+                <ul>
+                    <li>Estacionamento grátis</li>
+                    <li>Ar condicionado</li>
+                    <li>Piscina</li>
+                    <li>Wi-Fi grátis</li>
+                </ul>
+                <p>Valor 2.100,00 por pessoa, saindo de São Paulo.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
