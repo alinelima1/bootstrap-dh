@@ -7,10 +7,43 @@ form {
     border-radius: 8px;
 }
 
+input[type=number]{
+    width: 25%;
+} 
+
 .btn-position {
     text-align: center;
 }
 
-#carouselExampleControls {
+.promotion {
+    position: absolute;
+    right: 60%;
+    top: 0%;
+    left: 0%;
+    z-index: 10;
+    text-align: center;
+}
+
+.promotion-card {
+    background-color: #FF7933;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.promotion-percent {
+    width: 70%;
+    background-color: #FFCC33;
+    border-radius: 4px;
+    color: black;
+}
+
+.form-packages {
+    padding: 10% 0% 10% 5%;
+    font-size: 14px;
+    background-color: #e0e0e0;
+}
+
+.packages {
+    padding: 3%;
     text-align: center;
 }
