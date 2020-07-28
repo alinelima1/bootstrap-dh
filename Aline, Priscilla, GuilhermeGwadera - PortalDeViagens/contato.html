@@ -46,10 +46,10 @@
       </div>
     </nav>
   </header>
-  <main>
+  <main class="container-fluid">
     <div class="row">
       <div class="col-md-8 mt-3">
-        <div class="p-3 text-light rounded">
+        <div class="pt-3 text-light rounded">
           <p>
             Nossa página foi criada com o intuito de oferecer os melhores produtos de viagens, com qualidade e preço
             justo.<br /><br />
@@ -64,38 +64,64 @@
         </div>
       </div>
 
-      <div class="col-md-4 mt-3">
-        <form class="p-3 bg-light rounded">
-          <label for="name">Nome:</label>
-          <input type="text" id="name" name="name" placeholder="Name completo" required /><br /><br />
-          <label for="email">E-mail:</label>
-          <input type="text" id="email" name="email" value="" required /><br /><br />
-          <label for="phone">Telefone:</label>
-          <input type="text" list="phone" name="phone" placeholder="(11) 99999-1234" value="" /><br /><br />
-          <label for="gender">Gênero:</label> <br />
-          <input type="radio" id="female" name="gender" value="Feminino" />
-          <label for="gender">Feminino</label> <br />
-          <input type="radio" id="male" name="gender" value="Masculino" />
-          <label for="gender">Masculino</label><br /><br />
-          <label for="interests">Interesses:</label><br />
-          <input type="checkbox" id="option1" name="option1" value="Item1" />
-          <label for="option1">Pacotes Nacionais</label><br />
-          <input type="checkbox" id="option2" name="option2" value="Item2" />
-          <label for="option2">Pacotes Internacionais</label><br />
-          <input type="checkbox" id="option3" name="option3" value="Item3" />
-          <label for="option3">Cotação</label><br />
-          <input type="checkbox" id="option4" name="option4" value="Item4" />
-          <label for="option4">Dúvidas</label><br />
-          <input type="checkbox" id="option5" name="option5" value="Item5" />
-          <label for="option5">Feedback</label><br /><br />
-          <label for="message">Mensagem</label><br>
-          <input type="text" id="message" name="message" value="" placeholder="Escreva Aqui" /><br><br>
-
-          <div class="text-center">
-            <input class="btn btn-success" type="submit" value="Submit" />
-            <input class="btn btn-danger" type="reset" value="Excluir" />
-          </div>
-        </form>
+      <div class="col-md-4 mt-3 bg-light rounded">
+        <form class="py-3">
+          <form>
+            <div class="form-group">
+              <label for="name">Nome (obrigatório):</label>
+              <input type="text" class="form-control" id="name" placeholder="Nome completo" required>
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail (obrigatório):</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Telefone:</label>
+              <input type="text" class="form-control" id="phone" placeholder="(11) 99999-1234">
+            </div>
+            <div class="form-group">
+              <label for="gender">Gênero:</label><br>
+              <div class="form-check form-check-inline">
+                <input type="radio" id="male" name="gender" class="form-check-input">
+                <label class="form-check-label" for="customRadioInline1">Masculino</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input type="radio" id="female" name="gender" class="form-check-input">
+                <label class="form-check-label" for="customRadioInline2">Feminino</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="interests">Interesses:</label><br>
+              <div class="form-check">
+                <input type="checkbox" id="option1" value="Item1" name="interests" class="form-check-input">
+                <label class="form-check-label" for="customRadioInline1">Pacotes Nacionais</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" id="option2" value="Item2" name="interests" class="form-check-input">
+                <label class="form-check-label" for="customRadioInline2">Pacotes Internacionais</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" id="option3" value="Item3" name="interests" class="form-check-input">
+                <label class="form-check-label" for="customRadioInline2">Cotação</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" id="option4" value="Item4" name="interests" class="form-check-input">
+                <label class="form-check-label" for="customRadioInline2">Dúvidas</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" id="option5" value="Item5" name="interests" class="form-check-input">
+                <label class="form-check-label" for="customRadioInline2">Feedback</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Mensagem</label>
+              <textarea class="form-control" id="message" rows="3"></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary">Enviar</button>
+              <button type="reset" class="btn btn-danger">Excluir</button>
+            </div>
+          </form>
       </div>
     </div>
   </main>
